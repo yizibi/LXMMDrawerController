@@ -1,0 +1,38 @@
+//
+//  leftMenuDemo_PrefixHeader.pch
+//  侧滑菜单demo
+//
+//  Created by 李lucy on 17/3/27.
+//  Copyright © 2017年 com.muyandialog.Co.,Ltd. All rights reserved.
+//
+
+#ifndef leftMenuDemo_PrefixHeader_pch
+#define leftMenuDemo_PrefixHeader_pch
+
+
+
+//尺寸相关
+#define SCREEN_WIDTH      [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT     [UIScreen mainScreen].bounds.size.height
+
+
+#define ShareApp ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+
+/*** 日志 ***/
+#ifdef DEBUG
+#define LXLog(...) NSLog(__VA_ARGS__)
+#else
+#define LXLog(...)
+#endif
+
+#define LXLogFunc LXLog(@"%s", __func__);
+
+#import "MMDrawerController.h"
+#import "MMDrawerVisualState.h"
+#import "UIViewController+MMDrawerController.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* leftMenuDemo_PrefixHeader_pch */
